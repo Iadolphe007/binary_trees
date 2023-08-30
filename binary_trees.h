@@ -1,6 +1,19 @@
 #ifndef BINARY_TREES_H
 #define BINARY_TREES_H
 
+/*library*/
+
+#include <stdlib.h>
+#include <stddef.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include <unistd.h>
+#include <math.h>
+#include <limits.h>
+
+
+
 /**
  * struct binary_tree_s - Binary tree node
  *
@@ -20,6 +33,9 @@ typedef struct binary_tree_s binary_tree_t;
 typedef struct binary_tree_s bst_t;
 typedef struct binary_tree_s avl_t;
 typedef struct binary_tree_s heap_t;
+
+/*mandatory task*/
+
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value);
 binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value);
